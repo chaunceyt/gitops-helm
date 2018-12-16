@@ -34,6 +34,8 @@ spec:
           env:
           - name: backend_url
             value: {{ .Values.backend }}
+          - name: PODINFO_UI_COLOR
+            value: green
           ports:
             - name: http
               containerPort: {{ .Values.service.containerPort }}
